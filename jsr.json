@@ -1,0 +1,6 @@
+{
+    "name": "@biewers2/safer-js",
+    "version": "1.0.0",
+    "license": "MIT",
+    "exports": "./src/safer.ts"
+}

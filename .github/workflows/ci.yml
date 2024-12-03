@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  pull_request:
+    branches: ["main"]
+
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - run: npm ci
+    - run: npm run build
+    - run: npm test
+    - run: npx jsr publish --dry-run
+    - run: npm publish --provenance --access public --dry-run
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

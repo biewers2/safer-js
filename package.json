@@ -1,13 +1,9 @@
 {
   "name": "safer-js",
   "version": "1.0.0",
+  "author": "Jake Biewer",
+  "license": "MIT",
   "description": "Utilities for writing safer Javascript/Typescript",
-  "main": "index.js",
-  "scripts": {
-    "build": "rm -rf dist/* && tsc",
-    "test": "jest",
-    "doc": "typedoc src/safer-js.ts"
-  },
   "keywords": [
     "fetch",
     "json",
@@ -17,8 +13,17 @@
     "jonad",
     "result"
   ],
-  "author": "Jake Biewer",
-  "license": "MIT",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/biewers2/safer-js"
+  },
+  "main": "dist/safer.js",
+  "types": "dist/safer.d.ts",
+  "scripts": {
+    "build": "rm -rf dist/* && tsc",
+    "test": "jest",
+    "doc": "typedoc src/safer.ts"
+  },
   "devDependencies": {
     "@types/jest": "^29.5",
     "jest": "^29.7",
