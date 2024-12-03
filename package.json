@@ -1,0 +1,20 @@
+{
+  "name": "safer-js",
+  "version": "1.0.0",
+  "description": "Utilities for writing safer Javascript/Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jest"
+  },
+  "keywords": [
+    "fetch",
+    "json",
+    "safe",
+    "safer",
+    "monad",
+    "jonad",
+    "result"
+  ],
+  "author": "Jake Biewer",
+  "license": "MIT"
+}
